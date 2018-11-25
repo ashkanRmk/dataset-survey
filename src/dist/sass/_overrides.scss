@@ -1,0 +1,42 @@
+.ant-card-meta-title {
+	font-size: 30px !important;
+	font-weight: bold !important;
+}
+
+.ant-drawer-title {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold !important;
+}
+
+.btn-geek {
+	.ant-btn {
+		color: #2f54eb;
+		background: #f0f5ff;
+		border-color: #adc6ff;
+		font-size: 20px;
+	}
+}
+
+.icon-wrapper {
+	position: relative;
+	padding: 0px 30px;
+}
+
+.icon-wrapper .anticon {
+	position: absolute;
+	top: -2px;
+	width: 16px;
+	height: 16px;
+	line-height: 1;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.25);
+}
+
+.icon-wrapper .anticon:first-child {
+	left: 0;
+}
+
+.icon-wrapper .anticon:last-child {
+	right: 0;
+}

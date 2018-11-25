@@ -12,11 +12,11 @@ class Start extends Component {
 				<header className="App-header">
 					<img src={logo} className="App-logo" alt="logo" />
 
-					<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-						Start Podcastify Survey
+					<a className="App-link" href="https://ashkan-rmk.github.io/awesome-persian-podcasts/" target="_blank" rel="noopener noreferrer">
+						به فرم نظرسنجی پادکست‌های ایرانی خوش آمدید
 					</a>
 					<Link to="/start">
-						<Button>Click Me Next Page !!</Button>
+						<Button>شروع !!</Button>
 					</Link>
 				</header>
 			</div>

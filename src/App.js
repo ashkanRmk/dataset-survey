@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Start from './components/welcome';
-import Survey from './components/main/survey';
+import Survey from './components/survey/survey';
 
 class App extends Component {
 	render() {
