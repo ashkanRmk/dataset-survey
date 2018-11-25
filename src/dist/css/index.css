@@ -1,5 +1,15 @@
+html * {
+  font-family: "Samim" !important;
+}
+
 .App {
   text-align: center;
+  font-family: "Samim" !important;
+  padding: 5em;
+}
+
+.grid {
+  font-size: 30px;
 }
 
 .App-logo {
@@ -28,6 +38,60 @@
   to {
     transform: rotate(360deg);
   }
+}
+@font-face {
+  font-family: Samim;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Samim-Bold-FD-WOL.eot");
+  src: url("../fonts/Samim-Bold-FD-WOL.eot") format("embedded-opentype"), url("../fonts/Samim-Bold-FD-WOL.woff2") format("woff2"), url("../fonts/Samim-Bold-FD-WOL.woff") format("woff"), url("../fonts/Samim-Bold-FD-WOL.ttf") format("truetype");
+}
+@font-face {
+  font-family: Samim;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Samim-FD-WOL.eot");
+  src: url("../fonts/Samim-FD-WOL.eot") format("embedded-opentype"), url("../fonts/Samim-FD-WOL.woff2") format("woff2"), url("../fonts/Samim-FD-WOL.woff") format("woff"), url("../fonts/Samim-FD-WOL.ttf") format("truetype");
+}
+.ant-card-meta-title {
+  font-size: 30px !important;
+  font-weight: bold !important;
+}
+
+.ant-drawer-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold !important;
+}
+
+.btn-geek .ant-btn {
+  color: #2f54eb;
+  background: #f0f5ff;
+  border-color: #adc6ff;
+  font-size: 20px;
+}
+
+.icon-wrapper {
+  position: relative;
+  padding: 0px 30px;
+}
+
+.icon-wrapper .anticon {
+  position: absolute;
+  top: -2px;
+  width: 16px;
+  height: 16px;
+  line-height: 1;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.icon-wrapper .anticon:first-child {
+  left: 0;
+}
+
+.icon-wrapper .anticon:last-child {
+  right: 0;
 }
 
 /*# sourceMappingURL=index.css.map */
