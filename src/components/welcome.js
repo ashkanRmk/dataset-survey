@@ -8,7 +8,7 @@ import { Button } from 'antd';
 class Start extends Component {
 	render() {
 		return (
-			<div className="App">
+			<div>
 				<header className="App-header">
 					<img src={logo} className="App-logo" alt="logo" />
 

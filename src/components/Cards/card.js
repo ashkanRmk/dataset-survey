@@ -3,7 +3,6 @@ import '../../dist/css/index.css';
 import 'antd/dist/antd.css';
 import { Card, Row, Col, notification, Icon } from 'antd';
 import Drawer from '../Drawer/drawer';
-import Modal from '../Modals/modal';
 
 const { Meta } = Card;
 
