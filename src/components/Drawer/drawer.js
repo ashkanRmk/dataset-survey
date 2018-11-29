@@ -11,10 +11,15 @@ class MultiDrawer extends Component {
 			visibleChildDrawer: false,
 			placement: 'bottom',
 			value: 0,
+			titles: [],
 		};
 		this.closeModal = this.closeModal.bind(this);
-
 	}
+	componentDidMount() {
+		
+	}
+
+
 	showChildrenDrawer = () => {
 		this.setState({
 			visibleChildDrawer: true,
@@ -66,23 +71,23 @@ class MultiDrawer extends Component {
 					onClose={this.onClose}
 					visible={this.props.visibleDrawer}>
 					<div className="btn-geek">
-						<Row gutter={24} type="flex" justify="left">
-							<Col className="gutter-row" span={6}>
+						<Row gutter={18} type="flex" justify="center">
+							<Col className="gutter-row" span={6} style={{ paddingBottom: '15px' }}>
 								<Button onClick={this.showChildrenDrawer}>کافه تریا</Button>
 							</Col>
-							<Col className="gutter-row" span={6}>
+							<Col className="gutter-row" span={6} style={{ paddingBottom: '15px' }}>
 								<Button onClick={this.showChildrenDrawer}>کانال بی</Button>
 							</Col>
-							<Col className="gutter-row" span={6}>
+							<Col className="gutter-row" span={6} style={{ paddingBottom: '15px' }}>
 								<Button onClick={this.showChildrenDrawer}>بی پلاس</Button>
 							</Col>
-							<Col className="gutter-row" span={6}>
+							<Col className="gutter-row" span={6} style={{ paddingBottom: '15px' }}>
 								<Button onClick={this.showChildrenDrawer}>داستان شب</Button>
 							</Col>
-							<Col className="gutter-row" span={6}>
+							<Col className="gutter-row" span={6} style={{ paddingBottom: '15px' }}>
 								<Button onClick={this.showChildrenDrawer}>داستان شب</Button>
 							</Col>
-							<Col className="gutter-row" span={6}>
+							<Col className="gutter-row" span={6} style={{ paddingBottom: '15px' }}>
 								<Button onClick={this.showChildrenDrawer}>داستان شب</Button>
 							</Col>
 						</Row>
@@ -95,12 +100,10 @@ class MultiDrawer extends Component {
 						visible={this.state.visibleChildDrawer}>
 						<span>
 							<Rate onChange={this.handleChange} value={value} />
-							{value && <span className="ant-rate-text" > {value} </span>}
+							{<span className="ant-rate-text" />}
 						</span>
-						<p>Some contents...</p>
-						<p>Some contents...</p>
-						<p>Some contents...</p>
-						<Button onClick={this.showModal}>ادامه</Button>
+						<Button onClick={this.showModal}>تایید</Button>
+						<br />
 					</Drawer>
 				</Drawer>
 			</div>

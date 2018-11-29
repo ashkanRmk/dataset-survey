@@ -5,9 +5,14 @@ import { Modal, Button, Icon, Slider } from 'antd';
 
 class Modals extends Component {
 	state = {
-        loading: false,
-        value: 0
+		loading: false,
+		values: [],
+		subjects: [],
+		value: 0,
 	};
+	componentDidMount(){
+		
+	}
 
 	handleOk = () => {
 		this.setState({ loading: true });
@@ -28,9 +33,9 @@ class Modals extends Component {
 	render() {
 		const { loading } = this.state;
 
-        // const { max, min } = this.props;
-        const max = 5;
-        const min = 1;
+		// const { max, min } = this.props;
+		const max = 5;
+		const min = 1;
 		const { value } = this.state;
 		const mid = ((max - min) / 2).toFixed(5);
 		const preColor = value >= mid ? '' : 'rgba(0, 0, 0, .45)';
@@ -51,15 +56,30 @@ class Modals extends Component {
 							Submit
 						</Button>,
 					]}>
-					<p>Some contents...</p>
-					<p>Some contents...</p>
-					<p>Some contents...</p>
-					<p>Some contents...</p>
-					<p>Some contents...</p>
-					<div className="icon-wrapper">
-						<Icon style={{ color: preColor }} type="frown-o" />
-						<Slider max={5} min={1} onChange={this.handleChange} value={value} />
-						<Icon style={{ color: nextColor }} type="smile-o" />
+
+					<div style={{ display: 'flex' }}>
+						<div className="icon-wrapper" style={{ flex: 1 }}>
+							<Icon style={{ color: preColor }} type="frown-o" />
+							<Slider max={5} min={1} onChange={this.handleChange} value={value} />
+							<Icon style={{ color: nextColor }} type="smile-o" />
+						</div>
+						<p style={{ flex: 0.1 }}>روانشناسی</p>
+					</div>
+					<div style={{ display: 'flex' }}>
+						<div className="icon-wrapper" style={{ flex: 1 }}>
+							<Icon style={{ color: preColor }} type="frown-o" />
+							<Slider max={5} min={1} onChange={this.handleChange} value={value} />
+							<Icon style={{ color: nextColor }} type="smile-o" />
+						</div>
+						<p style={{ flex: 0.1 }}>سلامت</p>
+					</div>
+					<div style={{ display: 'flex' }}>
+						<div className="icon-wrapper" style={{ flex: 1 }}>
+							<Icon style={{ color: preColor }} type="frown-o" />
+							<Slider max={5} min={1} onChange={this.handleChange} value={value} />
+							<Icon style={{ color: nextColor }} type="smile-o" />
+						</div>
+						<p style={{ flex: 0.1 }}>اجتماعی</p>
 					</div>
 				</Modal>
 			</div>

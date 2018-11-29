@@ -7,10 +7,10 @@ import Drawer from '../Drawer/drawer';
 const { Meta } = Card;
 
 const gridStyle = {
-	width: '314px',
-	height: '314px',
+	// width: '314px',
+	// height: '314px',
 	textAlign: 'center',
-	paddingTop: '120px',
+	// paddingTop: '120px',
 };
 
 const openNotification = () => {
@@ -56,7 +56,7 @@ class Cards extends Component {
 	render() {
 		return (
 			<div>
-				<h1>لطفا یکی از موضوعات زیر که پادکست‌های مرتبط با آن را شنیده‌اید انتخاب کنید</h1>
+				<h6 style={{fontSize:"3vw"}}>لطفا یکی از موضوعات زیر که پادکست‌های مرتبط با آن را شنیده‌اید انتخاب کنید</h6>
 				<br />
 
 				<Drawer
@@ -65,69 +65,69 @@ class Cards extends Component {
 					visible={this.state.visible}
 					closeModal={this.closeModal}
 				/>
-				<Row type="flex" justify="center" gutter={24}>
-					<Col className="gutter-row" span={6}>
+				<Row type="flex" justify="center" gutter={18} >
+					<Col className="gutter-row"  xs={12} sm={6} style={{paddingBottom:"15px"}}	 >
 						<Card key="history" hoverable style={gridStyle} onClick={this.notif.bind(this, 'تاریخ و ادبیات')}>
 							<Meta title="تاریخ و ادبیات" />
 						</Card>
 					</Col>
-					<Col className="gutter-row" span={6}>
+					<Col className="gutter-row"  xs={12} sm={6} style={{paddingBottom:"15px"}}>
 						<Card hoverable style={gridStyle} onClick={this.showDrawer.bind(this)}>
 							<Meta title="تکنولوژی" />
 						</Card>
 					</Col>
-					<Col className="gutter-row" span={6}>
+					<Col className="gutter-row"  xs={12} sm={6}  style={{paddingBottom:"15px"}}>
 						<Card hoverable style={gridStyle} onClick={this.showDrawer.bind(this)}>
 							<Meta title="داستانی" />
 						</Card>
 					</Col>
-					<Col className="gutter-row" span={6}>
+					<Col className="gutter-row"  xs={12} sm={6} style={{paddingBottom:"15px"}}>
 						<Card hoverable style={gridStyle} onClick={openNotification}>
 							<Meta title="سینما و عکاسی" />
 						</Card>
 					</Col>
-				</Row>
-				<br />
-				<Row type="flex" justify="center" gutter={24}>
-					<Col className="gutter-row" span={6}>
+				{/* </Row> */}
+				{/* <br /> */}
+				{/* <Row type="flex" justify="center" gutter={24}> */}
+					<Col className="gutter-row"    xs={12} sm={6} style={{paddingBottom:"15px"}}  >
 						<Card hoverable style={gridStyle} onClick={openNotification}>
 							<Meta title="طنز" />
 						</Card>
 					</Col>
-					<Col className="gutter-row" span={6}>
+					<Col className="gutter-row"  xs={12} sm={6}  style={{paddingBottom:"15px"}}>
 						<Card hoverable style={gridStyle} onClick={openNotification}>
 							<Meta title="علمی" />
 						</Card>
 					</Col>
-					<Col className="gutter-row" span={6}>
+					<Col className="gutter-row"  xs={12} sm={6}  style={{paddingBottom:"15px"}}>
 						<Card hoverable style={gridStyle} onClick={openNotification}>
 							<Meta title="کسب و کار" />
 						</Card>
 					</Col>
-					<Col className="gutter-row" span={6}>
+					<Col className="gutter-row"  xs={12} sm={6} style={{paddingBottom:"15px"}} >
 						<Card hoverable style={gridStyle} onClick={openNotification}>
 							<Meta title="گفتگو محور" />
 						</Card>
 					</Col>
-				</Row>
-				<br />
-				<Row type="flex" justify="center" gutter={24}>
-					<Col className="gutter-row" span={6}>
+				{/* </Row> */}
+				{/* <br /> */}
+				{/* <Row type="flex" justify="center" gutter={24}> */}
+					<Col className="gutter-row"  xs={12} sm={6}  style={{paddingBottom:"15px"}}>
 						<Card hoverable style={gridStyle} onClick={openNotification}>
 							<Meta title="مسائل جنسی" />
 						</Card>
 					</Col>
-					<Col className="gutter-row" span={6}>
+					<Col className="gutter-row"  xs={12} sm={6} style={{paddingBottom:"15px"}}  >
 						<Card hoverable style={gridStyle} onClick={openNotification}>
 							<Meta title="موسیقی" />
 						</Card>
 					</Col>
-					<Col className="gutter-row" span={6}>
+					<Col className="gutter-row"  xs={12} sm={6} style={{paddingBottom:"15px"}} >
 						<Card hoverable style={gridStyle} onClick={openNotification}>
 							<Meta title="ورزش" />
 						</Card>
 					</Col>
-					<Col className="gutter-row" span={6}>
+					<Col className="gutter-row"  xs={12} sm={6} style={{paddingBottom:"15px"}} >
 						<Card hoverable style={gridStyle} onClick={openNotification}>
 							<Meta title="موضوعات دیگر" />
 						</Card>

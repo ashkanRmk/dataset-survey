@@ -1,11 +1,38 @@
+.ant-rate {
+	// width: 40%;
+	// margin: auto;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
 .ant-card-meta-title {
-	font-size: 30px !important;
 	font-weight: bold !important;
+}
+@media screen and (min-width: 567px) {
+	.ant-card-meta-title {
+		font-size: 1.4vw !important;
+	}
+	.ant-rate {
+		font-size: 5.5em !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.ant-card-meta-title {
+		font-size: 3.5vw !important;
+	}
+	.ant-rate {
+		font-size: 3.5em !important;
+	}
+}
+
+.ant-card-body {
+	padding: 24px 15px !important;
 }
 
 .ant-drawer-title {
 	text-align: center;
-	font-size: 30px;
+	font-size: 3vw;
 	font-weight: bold !important;
 }
 
@@ -14,7 +41,9 @@
 		color: #2f54eb;
 		background: #f0f5ff;
 		border-color: #adc6ff;
-		font-size: 20px;
+		font-size: 1em;
+		padding: 3px;
+		height: 28px;
 	}
 }
 
