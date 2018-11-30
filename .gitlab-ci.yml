@@ -1,0 +1,19 @@
+image: docker:latest
+
+services:
+- docker:dind
+
+stages:
+- production
+
+staging:
+  stage: staging
+  script:
+    - docker login $CI_REGISTRY -u $USER -p $TOKEN
+    - docker build -t $CI_REGISTRY_IMAGE .
+    - docker push $CI_REGISTRY_IMAGE
+  only:
+    - master
+  when: manual
+
+
