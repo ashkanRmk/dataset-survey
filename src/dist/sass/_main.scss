@@ -4,17 +4,34 @@ html * {
 	font-family: 'Samim' !important;
 }
 .App {
+	direction: rtl;
 	text-align: center;
 	font-family: 'Samim' !important;
-	padding: 5em;
+	padding: 3.2em;
+}
+
+.Result {
+	padding: 3.2em;
+	direction: rtl;
+	text-align: center;
+	// background-color: #3CB371;
+	min-height: 100vh;
+	font-size: calc(10px + 2vmin);
+	// color: white;
 }
 
 .grid {
-	font-size: 30px;
+	font-size: 3vw;
 }
 .App-logo {
 	// animation: App-logo-spin infinite 20s linear;
 	height: 40vmin;
+}
+
+.center {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
 }
 
 .App-header {
@@ -40,5 +57,3 @@ html * {
 		transform: rotate(360deg);
 	}
 }
-
-
