@@ -1,15 +1,23 @@
 @import 'variables';
 
-// *{
-// 	box-sizing: border-box;
-// }
 html * {
 	font-family: 'Samim' !important;
 }
 .App {
+	direction: rtl;
 	text-align: center;
 	font-family: 'Samim' !important;
 	padding: 3.2em;
+}
+
+.Result {
+	padding: 3.2em;
+	direction: rtl;
+	text-align: center;
+	// background-color: #3CB371;
+	min-height: 100vh;
+	font-size: calc(10px + 2vmin);
+	// color: white;
 }
 
 .grid {
@@ -20,7 +28,7 @@ html * {
 	height: 40vmin;
 }
 
-.center{
+.center {
 	display: flex !important;
 	justify-content: center !important;
 	align-items: center !important;
@@ -49,5 +57,3 @@ html * {
 		transform: rotate(360deg);
 	}
 }
-
-

@@ -1,35 +1,26 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import '../../dist/css/index.css';
 import 'antd/dist/antd.css';
-import { Button, Modal, notification, Icon } from 'antd';
+import { Button, Modal, Icon } from 'antd';
 import Cards from '../Cards/card.js';
 
 class Survey extends Component {
 	state = {
 		loading: false,
 		visible: false,
+		redirect: false,
 	};
 
 	handleOk = () => {
 		this.setState({ loading: true });
 		setTimeout(() => {
-			this.setState({ loading: false });
-			this.handleCancel();
-			this.notif('فرم با موفقیت ارسال شد');
+			this.setState({ loading: false, redirect: true, visible: false });
 		}, 3000);
 	};
 
 	handleCancel() {
 		this.setState({ visible: false });
-	}
-
-	notif(type) {
-		notification.open({
-			message: type,
-			// description: 'فرم با موفقیت ارسال شد',
-			icon: <Icon type="smile" style={{ color: '#108ee9' }} />,
-		});
 	}
 
 	render() {
@@ -44,7 +35,14 @@ class Survey extends Component {
 					onClick={() => {
 						this.setState({ visible: true });
 					}}
-					type="primary">
+					type="primary"
+					size="large"
+					style={{
+						color: '#2f54eb',
+						background: '#f0f5ff',
+						borderColor: '#adc6ff',
+					}}>
+					<Icon type="select" />
 					ارسال نهایی
 				</Button>
 
@@ -52,23 +50,27 @@ class Survey extends Component {
 				<br />
 
 				<Link to="/">
-					<Button type="primary">صفحه قبل !!</Button>
+					<Button type="primary">
+						<Icon type="double-left" />
+					</Button>
 				</Link>
 
 				<Modal
 					visible={this.state.visible}
-					title="آیا مطمئن هستید؟"
+					title="کاملا مطمئنی؟"
 					onOk={this.handleOk}
 					onCancel={this.handleCancel.bind(this)}
 					footer={[
 						<Button key="back" onClick={this.handleCancel.bind(this)}>
-							بازگشت
+							تکمیل امتیازها
 						</Button>,
 						<Button key="submit" type="primary" loading={loading} onClick={this.handleOk}>
-							ارسال نهایی!
+							ارسال نهایی
 						</Button>,
-					]}
-				/>
+					]}>
+					<p>تمام پادکست‌ها رو امتیاز دادی؟</p>
+				</Modal>
+				{this.state.redirect && <Redirect to="/thanks" />}
 			</div>
 		);
 	}

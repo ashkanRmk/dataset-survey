@@ -3,9 +3,18 @@ html * {
 }
 
 .App {
+  direction: rtl;
   text-align: center;
   font-family: "Samim" !important;
   padding: 3.2em;
+}
+
+.Result {
+  padding: 3.2em;
+  direction: rtl;
+  text-align: center;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
 }
 
 .grid {
