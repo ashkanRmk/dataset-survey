@@ -10,7 +10,6 @@ class Thanks extends Component {
 				<h1>نظر شما با موفقیت ثبت شد!</h1>
 				<p>ممنون از وقتی که گذاشتی :)</p>
                 <Icon type="check-circle" theme="twoTone" twoToneColor="#52c41a" style={{ fontSize: '50px' }} />
-				{/* <Icon type="smile" style={{ color: 'white', fontSize: '50px' }} /> */}
 			</div>
 		);
 	}
