@@ -7,16 +7,13 @@ import Drawer from '../Drawer/drawer';
 const { Meta } = Card;
 
 const gridStyle = {
-	// width: '314px',
-	// height: '314px',
 	textAlign: 'center',
-	// paddingTop: '120px',
 };
 
 const openNotification = () => {
 	notification.open({
 		message: 'عنوان تستی',
-		description: 'متن توضیحات تسیتی',
+		description: 'متن توضیحات تستی',
 		icon: <Icon type="smile" style={{ color: '#108ee9' }} />,
 	});
 };
@@ -39,7 +36,7 @@ class Cards extends Component {
 	notif(type) {
 		notification.open({
 			message: type,
-			description: 'متن توضیحات تسیتی',
+			description: 'متن توضیحات تستی',
 			icon: <Icon type="smile" style={{ color: '#108ee9' }} />,
 		});
 	}
@@ -86,9 +83,6 @@ class Cards extends Component {
 							<Meta title="سینما و عکاسی" />
 						</Card>
 					</Col>
-				{/* </Row> */}
-				{/* <br /> */}
-				{/* <Row type="flex" justify="center" gutter={24}> */}
 					<Col className="gutter-row"    xs={12} sm={6} style={{paddingBottom:"15px"}}  >
 						<Card hoverable style={gridStyle} onClick={openNotification}>
 							<Meta title="طنز" />
@@ -109,9 +103,6 @@ class Cards extends Component {
 							<Meta title="گفتگو محور" />
 						</Card>
 					</Col>
-				{/* </Row> */}
-				{/* <br /> */}
-				{/* <Row type="flex" justify="center" gutter={24}> */}
 					<Col className="gutter-row"  xs={12} sm={6}  style={{paddingBottom:"15px"}}>
 						<Card hoverable style={gridStyle} onClick={openNotification}>
 							<Meta title="مسائل جنسی" />

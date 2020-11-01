@@ -18,7 +18,7 @@ class Start extends Component {
 					<div style={{ direction: 'rtl', textAlign: 'center', padding: '20px' }}>
 						<p style={{ direction: 'rtl' }}>
 							ما اینجا سعی داریم تا اطلاعات لازم برای تگ‌بندی و آموزش یک سیستم پیشنهاددهنده برای پادکست‌های فارسی
-							جمع‌اوری کنیم. خوشحال میشیم تا یکم از وقتتون رو به ما بدین و این فرم رو تکمیل کنین. پیشاپیش ممنونیم ازتون
+							جمع‌اوری کنیم. خوشحال میشیم تا از وقتتون رو به ما بدین و این فرم رو تکمیل کنین. پیشاپیش ممنونیم ازتون
 							:)
 						</p>
 						{/* <Divider /> */}
@@ -26,7 +26,7 @@ class Start extends Component {
 							برای مشاهده یک لیست کاملی از پادکست‌های فارسی هم میتونین به
 							<a
 								className="App-link"
-								href="https://ashkan-rmk.github.io/awesome-persian-podcasts/"
+								href="https://github.com/ashkanRmk/awesome-persian-podcasts"
 								target="_blank"
 								rel="noopener noreferrer">
 								اینجا

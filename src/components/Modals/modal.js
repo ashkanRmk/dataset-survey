@@ -33,7 +33,6 @@ class Modals extends Component {
 	render() {
 		const { loading } = this.state;
 
-		// const { max, min } = this.props;
 		const max = 5;
 		const min = 1;
 		const { value } = this.state;
